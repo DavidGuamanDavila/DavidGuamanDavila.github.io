@@ -29,7 +29,6 @@ The primary motivation behind creating this website was to establish a professio
 - **JavaScript:** To add interactivity and manage dynamic content.
 - **CSS:** For styling and responsive design, ensuring the website is accessible across various devices.
 - **HTML:** The backbone of the website, structuring the content and layout.
-- **Vercel:** Utilized for deploying and hosting the website, offering a seamless development experience with high performance and scalability.
 
 ## Resources
 
