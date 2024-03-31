@@ -16,6 +16,8 @@ import aiII from '/src/assets/img/certifications/Coursera_CNN_TF.jpg';
 import aiIII from '/src/assets/img/certifications/Coursera_CustomModels_TF.jpg';
 
 import deploymentI from '/src/assets/img/certifications/Coursera_Docker_Beginners.jpg';
+import deploymentII from '/src/assets/img/certifications/TerraformCertificate.jpg';
+
 
 import networkI from '/src/assets/img/certifications/Coursera_Fundamentals_Network_Communication.jpg';
 
@@ -267,6 +269,28 @@ let title = Astro.props;
 				`}
 			>
 			</PortfolioCard>
+
+			<PortfolioCard
+			img={deploymentII}
+			alt={title}
+			site="https://www.udemy.com/certificate/UC-a0d6122f-10cd-466f-a31d-628148179ce9/"
+			reposite="https://github.com/DavidGuamanDavila/Terraform-for-AWS-Showcase"
+			title='Terraform for AWS - Beginner to Expert'
+			badgeProps={[
+				{ text: "Terraform" },
+				{ text: "AWS" },
+				{ text: "VS Code" },
+				{ text: "GitHub" }	
+			]}
+				badgeLinkProps={[ 
+			]}
+				description={`
+				I completed the "Terraform for AWS - Beginner to Expert" course on Udemy, where I acquired hands-on experience in managing AWS resources using Terraform. 
+				The course deepened my understanding of AWS services like RDS, EC2, and IAM, and taught me to implement Terraform modules and manage infrastructure as code. 
+				I learned to navigate and utilize Terraform documentation effectively, addressing real-world cloud infrastructure challenges.
+				`}
+			>
+			</PortfolioCard>
 		</div>
 
 		<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]' id="webdev">
@@ -420,7 +444,7 @@ let title = Astro.props;
 				badgeLinkProps={[ 
 			]}
 				description={`
-				I recently completed a comprehensive course focused on enhancing Java JUnit tests using mocks, specifically learning about Mockito 5 version. 
+				I completed a comprehensive course focused on enhancing Java JUnit tests using mocks, specifically learning about Mockito 5 version. 
 				The course equipped me with the skills to efficiently run unit tests with mocks in the Eclipse IDE, addressing practical, real-world testing problems.
 				Throughout my learning journey, I was guided to follow mocking best practices, which has significantly improved my ability to develop high-quality test 
 				suites for Java applications.
