@@ -24,6 +24,7 @@ import buoysI from "/src/assets/img/gazebo_acuatic_markers_annotation.png"
 import boat from "/src/assets/img/boat.jpg"
 import boatI from "/src/assets/img/boatI.jpg"
 import boatII from "/src/assets/img/boatII.jpeg"
+import njord from "/src/assets/img/njord.jpg"
 
 import blur from "/src/assets/img/bg.svg";
 import PortfolioCard from "@/components/PortfolioCard.astro";
@@ -85,6 +86,22 @@ let title = Astro.props;
 			id="asv"
 		>
 			<Subtitle text="Iceberg ASV" />
+			<PortfolioCard
+				img={njord}
+				alt={title}
+				reposite="https://github.com/IcebergASV/general/blob/main/yolov8_ros/IcebergREADME.md"
+				title="Computer Vision YOLOv8 and ROS2"
+				badgeProps={[
+					{ text: "Robotics Operating System 2" },
+					{ text: "Python" },
+					{ text: "GitHub" },
+					{ text: "VS Code" },
+				]}
+				badgeLinkProps={[]}
+				description={`
+				Real-time object detection with ROS2, based on YOLOv8 and PyTorch tailored for Iceberg ASV using Intel RealSense D435.
+				`}
+			/>
 			<PortfolioCard
 				img={boat}
 				alt={title}

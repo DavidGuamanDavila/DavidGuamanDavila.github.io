@@ -11,6 +11,8 @@ import cybersecurityI from '/src/assets/img/certifications/Coursera_Cybersecurit
 import cybersecurityII from '/src/assets/img/certifications/Coursera_CybersecurityII.jpg';
 import cybersecurityIII from '/src/assets/img/certifications/Coursera_Network_Security.jpg';
 
+import cybersecurityIV from '/src/assets/img/certifications/n.jpg';
+
 import aiI from '/src/assets/img/certifications/Coursera_Intro_TF.jpg';
 import aiII from '/src/assets/img/certifications/Coursera_CNN_TF.jpg';
 import aiIII from '/src/assets/img/certifications/Coursera_CustomModels_TF.jpg';
@@ -98,6 +100,21 @@ let title = Astro.props;
 
 		<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]' id="cybersecurity">
 			<Subtitle text='Cybersecurity'/>
+			<PortfolioCard
+			img={cybersecurityIV}
+			alt={title}
+			site=""
+			title='Foundations of Cybersecurity'
+			badgeProps={[
+				{ text: "Cybersecurity" }
+			]}
+			badgeLinkProps={[ 
+			]}
+			description={`
+			During my internship with the cloud security team at Nasdaq-Verafin, I participated in a capture the flag competition with the team and placed 17th/42.
+			`}
+			>
+			</PortfolioCard>
 			<PortfolioCard
 			img={cybersecurityI}
 			alt={title}
