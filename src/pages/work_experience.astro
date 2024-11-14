@@ -8,6 +8,7 @@ import seafood from '/src/assets/img/seafood_prod.png';
 import ocio from '/src/assets/img/ocio.jpg';
 import buildings from '/src/assets/img/smartbuildings.jpg';
 import security from '/src/assets/img/security.jpg';
+import cloud from '/src/assets/img/cloud.jpg';
 import ra from '/src/assets/img/residentassistant.jpg';
 import asv from '/src/assets/img/asv.jpeg';
 
@@ -56,6 +57,33 @@ let title = Astro.props;
 
 		<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]' id="nasdaq">
 			<Subtitle text='Nasdaq-Verafin'/>
+			<PortfolioCard
+				img={cloud}
+				alt={title}
+				companyweb="https://verafin.com/"
+				projectdesc="https://verafin.com/product/bsa-aml-compliance-management/#:~:text=Verafin%20analyzes%20a%20wide%20variety,financing%20or%20human%20trafficking%20activity."
+				title='Cloud Security Intern'
+				badgeProps={[
+					{ text: "AWS" },
+					{ text: "Prisma Cloud" },
+					{ text: "Terraform" },
+					{ text: "Splunk" },
+					{ text: "GitHub" },
+					{ text: "IntelliJ IDEA" }
+
+			]}
+				badgeLinkProps={[ 
+			 ]}
+				description={`
+				I worked in the Cloud Security team, where my contributions focused on protecting and strengthening our cloud infrastructure. 
+				I developed a proof of concept for runtime protection across Verafin's AWS ECS instances, leveraging AWS GuardDuty and Prisma Cloud Defender 
+				to assess security coverage, deployment feasibility, and cost-effectiveness. Additionally, I conducted penetration testing on these tools to 
+				evaluate and enhance their security protections. To reinforce access security, I implemented the PoLP for IAM 
+				users accessing resources like S3 buckets. My work also involved configuring and managing IAM policies, permission boundaries, and SCPs
+				to ensure secure and controlled access across our cloud environment.
+				`}
+			>
+			</PortfolioCard>
 			<PortfolioCard
 				img={security}
 				alt={title}
@@ -108,8 +136,8 @@ let title = Astro.props;
 				description={`
 				Iceberg ASV is a student-driven team from Memorial University that participates in the International RoboBoat Competition in Florida. This 
 				interdisciplinary group of engineering students focuses on designing, building, and testing an Autonomous Surface Vehicle (ASV) for competition. 
-				Iceberg ASV has showcased its innovations at the RoboBoat events in 2023 and 2024. My contributions include developing ASV code with ROS on Linux, 
-				crafting a YOLOv5 object detection model via RoboFlow for aquatic object recognition, managing our codebase with GitHub, conducting code reviews to 
+				Iceberg ASV has showcased its innovations at the RoboBoat events in 2023 and 2024 and the Njord Challange 2024. My contributions include developing ASV code with ROS on Linux, 
+				crafting YOLOv5 and v8 object detection models via RoboFlow for aquatic object recognition, managing our codebase with GitHub, conducting code reviews to 
 				ensure quality, and documenting our processes and models in GitBook.
 				`}
 			>
@@ -223,7 +251,7 @@ let title = Astro.props;
 				description={`
 				Student residences offer more than just housing; they provide a secure, supportive community that enriches both academic and social 
 				life. My role as a Resident Assistant, inspired by my predecessors, centers on cultivating a safe, inclusive environment conducive to academic
-				success and personal growth. I've fostered a positive community, encouraged teamwork, guided residents in their academic and personal journeys,
+				success and personal growth. I have fostered a positive community, encouraged teamwork, guided residents in their academic and personal journeys,
 				and created engaging programs. My responsibilities also include responding to emergencies and upholding university policies, all to ensure the 
 				community's well-being.
 				`}
