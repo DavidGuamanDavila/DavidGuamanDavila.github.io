@@ -10,7 +10,6 @@ import PortfolioCard from '@/components/PortfolioCard.astro';
 import cybersecurityI from '/src/assets/img/certifications/Coursera_CybersecurityI.jpg';
 import cybersecurityII from '/src/assets/img/certifications/Coursera_CybersecurityII.jpg';
 import cybersecurityIII from '/src/assets/img/certifications/Coursera_Network_Security.jpg';
-
 import cybersecurityIV from '/src/assets/img/certifications/n.jpg';
 
 import aiI from '/src/assets/img/certifications/Coursera_Intro_TF.jpg';
@@ -28,8 +27,8 @@ import db from '/src/assets/img/certifications/Udemy_PostgreSQL.jpg';
 
 import log from '/src/assets/img/certifications/Intro_to_Splunk.jpeg';
 
-import roboticsI from '/src/assets/img/certifications/Roboboat2023.jpg';
-import roboticsII from '/src/assets/img/certifications/Roboboat2024.jpg';
+import roboticsI from '/src/assets/img/certifications/Roboboat20231.jpg';
+import roboticsII from '/src/assets/img/certifications/Roboboat20242.jpg';
 
 import unittestingI from '/src/assets/img/certifications/Udemy_JUnit.jpg';
 import unittestingII from '/src/assets/img/certifications/Udemy_Mockito.jpg';
@@ -104,7 +103,7 @@ let title = Astro.props;
 			img={cybersecurityIV}
 			alt={title}
 			site=""
-			title='Foundations of Cybersecurity'
+			title='NDAQ Challenge CTF'
 			badgeProps={[
 				{ text: "Cybersecurity" }
 			]}
@@ -382,7 +381,6 @@ let title = Astro.props;
 
 		<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]' id="db">
 			<Subtitle text='Database Management and Analysis'/>
-			<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]'>
 			<PortfolioCard
 			img={db}
 			alt={title}
